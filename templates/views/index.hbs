@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h1>HBS Hell Index</h1>
+
+        <form method="GET">
+            <input type="text" name="address" id="">
+            <button type="submit" id="get-weather">Get Weather</button>
+        </form>
+        <div id="weather-report"></div>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
