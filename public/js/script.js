@@ -8,7 +8,7 @@ getWeatherBotton.addEventListener("click", (e) => {
   const address = e.target.previousElementSibling.value;
   console.log(e.target.previousElementSibling.value);
   weatherReport.innerText = "Loading...";
-  fetch(`http://localhost:3000/weather?address=${address}`, {
+  fetch(`/weather?address=${address}`, {
     method: "GET",
   })
     .then((response) => response.json())

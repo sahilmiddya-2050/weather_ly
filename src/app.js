@@ -6,6 +6,7 @@ const getCoordinate = require("./utils/coordinate");
 const getWeather = require("./utils/weather");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -87,6 +88,6 @@ app.get("*", (req, res) => {
 ////////////////////////////////////////////////////////////////////////////
 
 // Listening to the server
-app.listen(3000, () => {
-  console.log("server is running");
+app.listen(port, () => {
+  console.log("server is running" + port);
 });
